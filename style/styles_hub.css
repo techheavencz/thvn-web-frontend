@@ -7,7 +7,7 @@
 }
 
 .Cover-hub {
-    background: url("img/hub_cover.jpg");
+    background: url("../img/hub_cover.jpg");
     height: 460px;
     border-radius: 4px;
     align-self: stretch;

@@ -10,19 +10,17 @@
     <title>TechHeaven</title>
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="styles_events.css">
-    <link rel="stylesheet" href="styles_hub.css?v=1">
-    <link rel="stylesheet" href="styles_organization.css">
+    <link rel="stylesheet" href="style/styles_events.css">
+    <link rel="stylesheet" href="style/styles_hub.css?v=1">
+    <link rel="stylesheet" href="style/styles_organization.css">
 
-    <link rel="icon" href="./img/favicon.png">
-
-    <script defer src="main.dart.js"></script>
+    <link rel="icon" href="img/favicon.png">
   </head>
 
   <body>
     <header class="Header">
       <div class="Th-logo">
-        <img class="Th-logo-img" src="./img/logo_th_full.svg" alt="Th-logo">
+        <img class="Th-logo-img" src="img/logo_th_full.svg" alt="Th-logo">
       </div>
       <div class="Nav-bar">
         <div class="Navigation">
@@ -50,11 +48,11 @@
             </div>
             <div class="Next-event-details">
               <div class="Details-element">
-                <img class="calendar-img" src="./img/calendar.svg" alt="calendar-img">
+                <img class="calendar-img" src="img/calendar.svg" alt="calendar-img">
                 <span>12. června</span>
               </div>
               <div class="Details-element">
-                <img class="map-img" src="./img/map.svg" alt="map-img">
+                <img class="map-img" src="img/map.svg" alt="map-img">
                 <span>DEPO2015, Plzen</span>
               </div>
               <div class="EmptySpace--expand"></div>
@@ -76,7 +74,7 @@
                 <span class="Prev-event-info-date">21. dubna</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://devheaven.cz">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -90,7 +88,7 @@
                 <span class="Prev-event-info-date">14. března</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://www.facebook.com/events/597436637256402/">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -103,7 +101,7 @@
                 <span class="Prev-event-info-date">7. března</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://www.facebook.com/events/333045363858416/">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -116,7 +114,7 @@
                 <span class="Prev-event-info-date">28. února</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://www.facebook.com/events/143645262972085/">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -129,7 +127,7 @@
                 <span class="Prev-event-info-date">9. února</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://www.facebook.com/events/210477202844251/">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -142,7 +140,7 @@
                 <span class="Prev-event-info-date">6. února</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://www.facebook.com/events/152191458770096/">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -155,7 +153,7 @@
                 <span class="Prev-event-info-date">18. prosince, 2017</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://www.facebook.com/events/1575359009217994/">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -168,7 +166,7 @@
                 <span class="Prev-event-info-date">27. listopadu, 2017</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://www.facebook.com/events/1985890891677510/">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -181,7 +179,7 @@
                 <span class="Prev-event-info-date">22. září, 2017</span>
                 <a class="Prev-event-info-link" target="_blank"
                    href="https://www.facebook.com/events/1470329159712056/">
-                  <img class="Prev-event-info-img" src="./img/prev-info.svg">
+                  <img class="Prev-event-info-img" src="img/prev-info.svg">
                 </a>
               </div>
             </div>
@@ -308,6 +306,9 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8j4VUDJ2ESfJHht0rMXMTaO0zwQbZIMI&callback=initMap"
             async defer></script>
-
+    <script type="module">
+      import {main} from "./script/index.js";
+      main();
+    </script>
   </body>
 </html>
