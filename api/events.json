@@ -1,0 +1,26 @@
+[
+  {
+    "id":"123456",
+    "title":"událost 1",
+    "description":"ahoj \n trwgwtg \n 5trhy<hr/>rgh5yh",
+    "cover_url":"https://img.blesk.cz/img/1/normal620/5163233-img-astroclanky-ezoterika-obrazy-zvirata-osobnost-povaha-prvni-pohled-v7.jpg?v=7",
+    "event_url":"",
+    "date":"Thu May 23 2019 14:58:08 GMT+0200"
+  },
+  {
+    "id":"123456",
+    "title":"událost 2",
+    "description":"ahoj",
+    "cover_url":"https://img.blesk.cz/img/1/normal620/5163233-img-astroclanky-ezoterika-obrazy-zvirata-osobnost-povaha-prvni-pohled-v7.jpg?v=7",
+    "event_url":"",
+    "date":"Thu May 23 2019 14:58:08 GMT+0200"
+  },
+  {
+    "id":"123456",
+    "title":"událost 3",
+    "description":"ahoj",
+    "cover_url":"https://img.blesk.cz/img/1/normal620/5163233-img-astroclanky-ezoterika-obrazy-zvirata-osobnost-povaha-prvni-pohled-v7.jpg?v=7",
+    "event_url":"",
+    "date":"Thu May 23 2019 14:58:08 GMT+0200"
+  }
+]
