@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.pub
+build
+.dart_tool
+.packages
+\.firebase/
+.DS_Store

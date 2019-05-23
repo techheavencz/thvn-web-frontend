@@ -1,0 +1,80 @@
+@media only screen and (max-width: 768px) {
+
+.middle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+}
+.middle {
+  background-color: white;
+  color: #333333;
+}
+
+.left {
+  margin-bottom: 1%;
+}
+
+.right {
+  margin-top: 1%;
+}
+
+.side {
+  background-color: #14A2E4;
+  color: white;
+}
+
+.detail-btn {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.in {
+  width: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.full {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.arrow {
+  width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.arrow-wrapper {
+   white-space: nowrap;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.inner {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.arrow-xs {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7%;
+  margin-top: 7%;
+}
