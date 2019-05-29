@@ -21,7 +21,7 @@ export class EventPrev {
                     <span>DEPO2015, Plzen</span>
                 </div>
                 <div class="EmptySpace--expand"></div>
-                <a class="Web-akce-button" href=${this.event.event_url} target="_blank">web akce</a>
+                <a class="Web-akce-button" href=${this.event.event_url} target="_blank"><img class="Prev-event-info-img" src="img/facebook-logo.svg"></a>
             </div>
         `
     }

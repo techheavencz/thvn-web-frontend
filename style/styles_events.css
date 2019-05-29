@@ -155,22 +155,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .Web-akce-button {
-    display: block;
-
-    border: 1px solid #FFEB3B;
-    border-radius: 4px;
-
-    padding: 8px 32px;
-
     cursor: pointer;
-
     align-self: flex-start;
+}
 
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #FFEB3B;
-    font-size: 18px;
-    font-weight: 600;
+.Web-akce-button img {
+    width: 60px;
+    height: auto;
 }
 
 .Tags-container {
@@ -284,7 +275,7 @@ h1, h2, h3, h4, h5, h6, p {
 .Prev-event-info-place {
     font-size: 18px;
     font-weight: 300;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .Prev-event-info-link {
@@ -299,8 +290,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .Prev-event-info-link > img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 .Page {

@@ -22,7 +22,7 @@ export class EventBox {
                         <span>DEPO2015, Plzen</span>
                     </span>
                     <a class="Prev-event-info-link" target="_blank"href=${this.event.event_url}>
-                        <img class="Prev-event-info-img" src="img/prev-info.svg">
+                        <img class="Prev-event-info-img" src="img/facebook-logo.svg">
                     </a>
                 </div>
             </div>

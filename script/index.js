@@ -10,7 +10,8 @@ export async function main(){
     for(const event of events){
         if(x!=0){
             const eventBox = new EventBox(event, containerElement);
+        } else {
+            x=1;
         }
-        x++;
     }
 }
