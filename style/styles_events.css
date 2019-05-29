@@ -234,34 +234,6 @@ h1, h2, h3, h4, h5, h6, p {
     background: #222;
 }
 
-.Prev-event--jqcgeoqdgw {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.839779) 74.59%, #000000 100%), #6FCF97;
-}
-
-.Prev-event--gtnrxujkol {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.839779) 74.59%, #000000 100%), url("../img/prev-event-gtnrxujkol.jpg");
-}
-
-.Prev-event--ybpbxywfei {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.839779) 74.59%, #000000 100%), url("../img/prev-event-ybpbxywfei.jpg");
-}
-
-.Prev-event--ypxpcuyjaa {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.839779) 74.59%, #000000 100%), url("../img/prev-event-ypxpcuyjaa.jpg");
-}
-
-.Prev-event--osxmabfufc {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.839779) 74.59%, #000000 100%), url("../img/prev-event-osxmabfufc.jpg");
-}
-
-.Prev-event--crdqsygcfs {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.839779) 74.59%, #000000 100%), url("../img/prev-event-crdqsygcfs.jpg");
-}
-
-.Prev-event--irafgzhbtt {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.839779) 74.59%, #000000 100%), url("../img/prev-event-irafgzhbtt.jpg");
-}
-
 .Prev-event-details {
     display: flex;
     flex-direction: column;
@@ -305,6 +277,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .Prev-event-info-date {
     font-size: 24px;
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.Prev-event-info-place {
+    font-size: 18px;
     font-weight: 300;
     flex-grow: 1;
 }
