@@ -5,13 +5,19 @@ import {EventPrev} from "./EventPrev.js";
 export async function main(){
     const containerElement = document.getElementById("events");
     const events = await fetchEvents();
-    const eventPrev = new EventPrev(events[0]);
-    let x = 0;
-    for(const event of events){
-        if(x!=0){
-            const eventBox = new EventBox(event, containerElement);
-        } else {
-            x=1;
+    const date = new Date();
+    let eventsAct = new Array();
+    let i=0;
+    for(const eventDate of events){
+        if (eventDate.date >= date){
+            eventsAct[i] = eventDate;
+            i++;
         }
+    }
+    eventsAct = events.reverse();
+    const eventPrev = new EventPrev(eventsAct[0]);
+    eventsAct.splice(0, 1);
+    for(const event of eventsAct){
+        const eventBox = new EventBox(event, containerElement);
     }
 }

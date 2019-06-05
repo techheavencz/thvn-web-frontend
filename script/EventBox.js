@@ -7,7 +7,7 @@ export class EventBox {
     }
     _createContainer(cover){
         this.container = document.createElement("div");
-        this.container.style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.839779) 74.59%, #000000 100%), url(" + cover +" )";
+        this.container.style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 74.59%, #000000 100%), url(" + cover +" ) no-repeat 50% 50%";
         this.container.classList.add("Prev-event-element");
         this.targetElement.appendChild(this.container);
     }
@@ -19,7 +19,7 @@ export class EventBox {
                     <span class="Prev-event-info-date">${this.event.date.getDate()}. ${this.event.date.getMonth()}.</span>
                     <span class="Prev-event-info-place">
                         <img class="map-img" src="img/map.svg" alt="map-img">
-                        <span>DEPO2015, Plzen</span>
+                        <span>${this.event.place}</span>
                     </span>
                     <a class="Prev-event-info-link" target="_blank"href=${this.event.event_url}>
                         <img class="Prev-event-info-img" src="img/facebook-logo.svg">

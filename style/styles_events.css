@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     font-weight: 600;
     font-size: 36px;
+    margin-top: 20px;
 }
 
 .Next-event-description {
@@ -123,11 +124,10 @@ h1, h2, h3, h4, h5, h6, p {
 
     opacity: 0.7;
 
-    max-width: 670px;
 }
 
 .Next-event-details {
-    margin: 20px 0 0 0px;
+    margin: 20px 0 20px 0;
     font-size: 18px;
 
     display: flex;
@@ -223,9 +223,13 @@ h1, h2, h3, h4, h5, h6, p {
 
     border-radius: 4px;
     background: #222;
+
+    background-size: cover!important;
 }
 
 .Prev-event-details {
+    color: white;
+
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -233,8 +237,6 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: flex-end;
 
     margin: 0 42px 32px 42px;
-
-    color: #fff;
 }
 
 .Prev-event-tag {
@@ -290,12 +292,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .Prev-event-info-link > img {
-    width: 30px;
-    height: 30px;
+    width: 100%;
 }
 
 .Page {
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }

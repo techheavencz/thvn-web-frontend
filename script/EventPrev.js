@@ -18,7 +18,7 @@ export class EventPrev {
                 </div>
                 <div class="Details-element">
                     <img class="map-img" src="img/map.svg" alt="map-img">
-                    <span>DEPO2015, Plzen</span>
+                    <span>${this.event.place}</span>
                 </div>
                 <div class="EmptySpace--expand"></div>
                 <a class="Web-akce-button" href=${this.event.event_url} target="_blank"><img class="Prev-event-info-img" src="img/facebook-logo.svg"></a>
