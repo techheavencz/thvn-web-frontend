@@ -14,7 +14,7 @@ export async function main(){
             i++;
         }
     }
-    eventsAct = events.reverse();
+    eventsAct = eventsAct.reverse();
     const eventPrev = new EventPrev(eventsAct[0]);
     eventsAct.splice(0, 1);
     for(const event of eventsAct){
