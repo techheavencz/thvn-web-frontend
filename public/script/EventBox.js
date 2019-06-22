@@ -12,11 +12,12 @@ export class EventBox {
         this.targetElement.appendChild(this.container);
     }
     render(){
+        this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
             <div class="Prev-event-details">
                 <div class="Prev-event-title">${this.event.title}</div>
                 <div class="Prev-event-info">
-                    <span class="Prev-event-info-date">${this.event.date.getDate()}. ${this.event.date.getMonth()}.</span>
+                    <span class="Prev-event-info-date">${this.event.date.getDate()}. ${this.month}.</span>
                     <span class="Prev-event-info-place">
                         <img class="map-img" src="img/map.svg" alt="map-img">
                         <span>${this.event.place}</span>

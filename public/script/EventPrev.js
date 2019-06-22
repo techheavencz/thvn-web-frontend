@@ -8,13 +8,14 @@ export class EventPrev {
         this.container = document.getElementById("Next-event")
     }
     render(){
+        this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
             <div class="Next-event-title">${this.event.title}</div>
             <div class="Next-event-description">${this.event.description}</div>
             <div class="Next-event-details">
                 <div class="Details-element">
                     <img class="calendar-img" src="img/calendar.svg" alt="calendar-img">
-                    <span>${this.event.date.getDate()}. ${this.event.date.getMonth()}.</span>
+                    <span>${this.event.date.getDate()}. ${this.month}.</span>
                 </div>
                 <div class="Details-element">
                     <img class="map-img" src="img/map.svg" alt="map-img">

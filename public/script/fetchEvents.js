@@ -1,5 +1,5 @@
 import {Event} from "./Event.js";
-const API_URL = `http://localhost:3000`;
+const API_URL = `https://techheaven-general.appspot.com`;
 
 export async function fetchEvents() {
     const response = await fetch(`${API_URL}/events/TechHeavenCZ`);
