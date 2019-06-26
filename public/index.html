@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="Cache-control" content="public" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>TechHeaven</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="style/styles_events.css">
-    <link rel="stylesheet" href="style/styles_hub.css?v=1">
-    <link rel="stylesheet" href="style/styles_organization.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/styles_events.css" />
+    <link rel="stylesheet" href="style/styles_hub.css?v=1" />
+    <link rel="stylesheet" href="style/styles_organization.css" />
 
-    <link rel="icon" href="img/favicon.png">
-</head>
+    <link rel="icon" href="img/favicon.png" />
+  </head>
 
-<body>
-<header class="Header">
-    <div class="Th-logo">
-        <img class="Th-logo-img" src="img/logo_th_full.svg" alt="Th-logo">
-    </div>
-    <div class="Nav-bar">
-        <div class="Navigation">
-            <a class="Nav-element" href="index.html" data-route="events" selected>akce</a>
-            <a class="Nav-element" href="hub.html" data-route="hub">hub</a>
-            <!--<a class="Nav-element" data-route="techheaven">techheaven</a>-->
-            <a class="Nav-element" href="org.html" data-route="organizace">organizace</a>
-        </div>
-    </div>
-</header>
+  <body>
+    <header class="Header">
+      <figure class="Th-logo">
+        <img class="Th-logo-img" src="img/logo_th_full.svg" alt="Th-logo" />
+      </figure>
+      <div class="Nav-bar">
+        <nav class="Navigation">
+          <a class="Nav-element" href="index.html" data-route="events" selected
+            >akce</a
+          >
+          <a class="Nav-element" href="hub.html" data-route="hub">hub</a>
+          <!--<a class="Nav-element" data-route="techheaven">techheaven</a>-->
+          <a class="Nav-element" href="org.html" data-route="organizace"
+            >organizace</a
+          >
+        </nav>
+      </div>
+    </header>
 
-<div class="Page Page-Events">
-    <div class="Upcoming-events">
+    <section class="Page Page-Events">
+      <div class="Upcoming-events">
         <div class="About-next-event">
-            <div class="Next-event-container" id="Next-event">
-
-            </div>
+          <div class="Next-event-container" id="Next-event"></div>
         </div>
-    </div>
-</div>
+      </div>
+    </section>
 
-<div class="Previous-events-section">
-    <div class="Prev-events-title">Další akce</div>
-    <div class="Prev-events-container" id="eventsNext">
-    </div>
+    <section class="Previous-events-section">
+      <div class="Prev-events-title">Další akce</div>
+      <section class="Prev-events-container" id="eventsNext"></section>
 
-    <div class="Prev-events-title">Minulé akce</div>
-    <div class="Prev-events-container" id="eventsPast">
-    </div>
-</div>
+      <div class="Prev-events-title">Minulé akce</div>
+      <section class="Prev-events-container" id="eventsPast"></section>
+    </section>
 
-
-<script type="module">
-    import {main} from "./script/index.js";
-    main();
-</script>
-</body>
+    <script type="module">
+      import { main } from './script/index.js';
+      main();
+    </script>
+  </body>
 </html>
