@@ -190,7 +190,8 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: center;
     align-items: center;
 
-    margin: 0 0 50px 0;
+    margin: auto;
+    max-width: 1000px;
 }
 
 .Prev-events-title {
@@ -202,7 +203,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1000px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }

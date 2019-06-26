@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="Cache-control" content="public">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,50 +17,47 @@
     <link rel="stylesheet" href="style/styles_organization.css">
 
     <link rel="icon" href="img/favicon.png">
-  </head>
+</head>
 
-  <body>
-    <header class="Header">
-      <div class="Th-logo">
+<body>
+<header class="Header">
+    <div class="Th-logo">
         <img class="Th-logo-img" src="img/logo_th_full.svg" alt="Th-logo">
-      </div>
-      <div class="Nav-bar">
+    </div>
+    <div class="Nav-bar">
         <div class="Navigation">
-          <a class="Nav-element" href="index.html" data-route="events" selected>akce</a>
-          <a class="Nav-element" href="hub.html" data-route="hub">hub</a>
-          <!--<a class="Nav-element" data-route="techheaven">techheaven</a>-->
-          <a class="Nav-element" href="org.html" data-route="organizace">organizace</a>
+            <a class="Nav-element" href="index.html" data-route="events" selected>akce</a>
+            <a class="Nav-element" href="hub.html" data-route="hub">hub</a>
+            <!--<a class="Nav-element" data-route="techheaven">techheaven</a>-->
+            <a class="Nav-element" href="org.html" data-route="organizace">organizace</a>
         </div>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <div class="Page Page-Events">
-      <div class="Upcoming-events">
+<div class="Page Page-Events">
+    <div class="Upcoming-events">
         <div class="About-next-event">
-          <div class="Next-event-container" id="Next-event">
+            <div class="Next-event-container" id="Next-event">
 
-          </div>
+            </div>
         </div>
-      </div>
+    </div>
+</div>
+
+<div class="Previous-events-section">
+    <div class="Prev-events-title">Další akce</div>
+    <div class="Prev-events-container" id="eventsNext">
     </div>
 
-      <div class="Previous-events-section">
-        <div class="Prev-events-title">Další akce</div>
-        <div class="Prev-events-container" id="eventsNext">
-
-        </div>
-      </div>
-    <div class="Previous-events-section">
-      <div class="Prev-events-title">Minulé akce</div>
-      <div class="Prev-events-container" id="eventsPast">
-
-      </div>
+    <div class="Prev-events-title">Minulé akce</div>
+    <div class="Prev-events-container" id="eventsPast">
     </div>
+</div>
 
 
-    <script type="module">
-      import {main} from "./script/index.js";
-      main();
-    </script>
-  </body>
+<script type="module">
+    import {main} from "./script/index.js";
+    main();
+</script>
+</body>
 </html>

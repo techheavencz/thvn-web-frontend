@@ -1,5 +1,6 @@
 import {fetchEvents} from "./fetchEvents.js";
 import {EventBox} from "./EventBox.js";
+import {EventBoxOld} from "./EventBoxOld.js";
 import {EventPrev} from "./EventPrev.js";
 
 export async function main(){
@@ -23,6 +24,6 @@ export async function main(){
         const eventBox = new EventBox(event, containerElement);
     }
     for(const event of events){
-        const eventBox = new EventBox(event, containerEl);
+        const eventBoxOld = new EventBoxOld(event, containerEl);
     }
 }

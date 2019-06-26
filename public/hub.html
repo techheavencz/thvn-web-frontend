@@ -43,7 +43,7 @@
                     dvě velké kanceláře včetně jedné zasedací místností s projektorem. Jsme místo pro vytváření nových
                     nápadů.
                     <br><br>
-                    Jsme TechHeaven HUB.
+                    Jsme TechHeaven HUB 2.0.
                 </p>
             </div>
         </div>
@@ -115,13 +115,13 @@
     }
 
     function startMap() {
-        var hub = {lat: 49.7373275, lng: 13.3817675};
-        var map = new google.maps.Map(document.getElementById('Section-Map-Frame'), {
+        const hub = {lat: 49.736596, lng: 13.381467};
+        const map = new google.maps.Map(document.getElementById('Section-Map-Frame'), {
             center: hub,
             zoom: 14
         });
 
-        var marker = new google.maps.Marker({position: hub, map: map});
+        const marker = new google.maps.Marker({position: hub, map: map});
     }
 </script>
 
