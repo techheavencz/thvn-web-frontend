@@ -1,0 +1,29 @@
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+
+const paths = {
+  style: {
+    src: 'src/style/*.sass',
+    dest: 'public/style',
+  },
+};
+
+function style() {
+  return gulp
+    .src(paths.style.src)
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(gulp.dest(paths.style.dest));
+}
+
+function watch() {
+  gulp.watch(paths.style.src, style);
+}
+
+gulp.task('default', function() {
+  style();
+  watch();
+});
