@@ -10,7 +10,7 @@ export class EventPrev {
     render(){
         this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
-            <a class="Next-event-title" href="href=${this.event.event_url}" target="_blank" rel="noopener">${this.event.title}</a>
+            <a class="Next-event-title" href="${this.event.event_url}" target="_blank" rel="noopener">${this.event.title}</a>
             <div class="Next-event-description">${this.event.description}</div>
             <div class="Next-event-details">
                 <div class="Details-element">
