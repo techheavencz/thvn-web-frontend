@@ -116,6 +116,12 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 600;
     font-size: 36px;
     margin-top: 20px;
+
+    text-decoration: none;
+}
+
+.Next-event-container:hover .Next-event-title, .Next-event-title:active, .Next-event-title:focus {
+    text-decoration: underline;
 }
 
 .Next-event-description {
@@ -261,7 +267,14 @@ h1, h2, h3, h4, h5, h6, p {
 .Prev-event-title {
     font-size: 36px;
     margin: 0 0 12px 0;
+    text-decoration: none;
+    color: white;
 }
+
+.Prev-event-details:hover .Prev-event-title, .Prev-event-title:active, .Prev-event-title:focus {
+    text-decoration: underline;
+}
+
 
 .Prev-event-info {
     display: flex;
