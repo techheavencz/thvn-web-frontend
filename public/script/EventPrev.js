@@ -11,7 +11,7 @@ export class EventPrev {
         this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
             <div class="Next-event-title">${this.event.title}</div>
-            <div class="Next-event-description">${this.event.description}</div>
+            <div class="Next-event-description">${this.event.description.split("\n").join("<br>")}</div>
             <div class="Next-event-details">
                 <div class="Details-element">
                     <img class="calendar-img" src="img/calendar.svg" alt="calendar-img">
