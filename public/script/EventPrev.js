@@ -22,7 +22,7 @@ export class EventPrev {
                     <span>${this.event.place}</span>
                 </div>
                 <div class="EmptySpace--expand"></div>
-                <a class="Web-akce-button" href=${this.event.event_url} target="_blank"><img class="Prev-event-info-img" src="img/facebook-logo.svg"></a>
+                <a class="Web-akce-button" href=${this.event.event_url} target="_blank" rel="noopener"><img class="Prev-event-info-img" src="img/facebook-logo.svg"></a>
             </div>
         `
     }
