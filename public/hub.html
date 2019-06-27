@@ -21,17 +21,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>TechHeaven</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="style/styles_events.css">
-    <link rel="stylesheet" href="style/styles_hub.css?v=1">
-    <link rel="stylesheet" href="style/styles_organization.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/styles_events.css" />
+    <link rel="stylesheet" href="style/styles_hub.css?v=1" />
+    <link rel="stylesheet" href="style/styles_organization.css" />
 
-    <link rel="icon" href="img/favicon.png">
-</head>
+    <link rel="icon" href="img/favicon.png" />
+  </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -39,115 +42,126 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 <header class="Header">
-    <div class="Th-logo">
+    <figure class="Th-logo">
         <img class="Th-logo-img" src="img/logo_th_full.svg" alt="Th-logo">
-    </div>
+    </figure>
     <div class="Nav-bar">
-        <div class="Navigation">
+        <nav class="Navigation">
             <a class="Nav-element" href="/" data-route="events">akce</a>
             <a class="Nav-element" href="/hub" data-route="hub" selected>hub</a>
             <!--<a class="Nav-element" data-route="techheaven">techheaven</a>-->
             <a class="Nav-element" href="/org" data-route="organizace">organizace</a>
-        </div>
+        </nav>
     </div>
 </header>
 
-<div class="Page Page-Hub" id="Page-Hub">
-    <div class="Section-hub">
+    <main class="Page Page-Hub" id="Page-Hub">
+      <div class="Section-hub">
         <div class="Cover-hub"></div>
-        <div class="Section-text">
-            <div class="Textbox">
-                <p>
-                    Otevíráme vývojářské coworkingové centrum, které nabízí jedinečný prostor pro vaši práci. K
-                    dispozici jsou
-                    dvě velké kanceláře včetně jedné zasedací místností s projektorem. Jsme místo pro vytváření nových
-                    nápadů.
-                    <br><br>
-                    Jsme TechHeaven HUB 2.0.
-                </p>
-            </div>
-        </div>
-        <div class="Advantages">
-            <div class="Advantages-container">
-                <div class="Advantages-element">
-                    <div class="Advantage-img">
-                        <img class="adv-cup-img" src="img/ic_coffee_cup.svg" alt="cup">
-                    </div>
-                    <div class="Advantage-text">Výborná káva</div>
-                </div>
-                <div class="Advantages-element">
-                    <div class="Advantage-img">
-                        <img class="adv-apple-img" src="img/ic_apple.svg" alt="apple">
-                    </div>
-                    <div class="Advantage-text">Ovoce a další dobroty</div>
-                </div>
-                <div class="Advantages-element">
-                    <div class="Advantage-img">
-                        <img class="adv-location-img" src="img/ic_location_pointer.svg" alt="location">
-                    </div>
-                    <div class="Advantage-text">Blízko do centra</div>
-                </div>
-            </div>
-        </div>
+        <article class="Section-text">
+          <div class="Textbox">
+            <p>
+              Otevíráme vývojářské coworkingové centrum, které nabízí jedinečný
+              prostor pro vaši práci. K dispozici jsou dvě velké kanceláře
+              včetně jedné zasedací místností s projektorem. Jsme místo pro
+              vytváření nových nápadů.
+              <br /><br />
+              Jsme TechHeaven HUB 2.0.
+            </p>
+          </div>
+        </article>
+        <section class="Advantages">
+          <div class="Advantages-container">
+            <section class="Advantages-element">
+              <div class="Advantage-img">
+                <img
+                  class="adv-cup-img"
+                  src="img/ic_coffee_cup.svg"
+                  alt="cup"
+                />
+              </div>
+              <div class="Advantage-text">Výborná káva</div>
+            </section>
+            <section class="Advantages-element">
+              <div class="Advantage-img">
+                <img class="adv-apple-img" src="img/ic_apple.svg" alt="apple" />
+              </div>
+              <div class="Advantage-text">Ovoce a další dobroty</div>
+            </section>
+            <section class="Advantages-element">
+              <div class="Advantage-img">
+                <img
+                  class="adv-location-img"
+                  src="img/ic_location_pointer.svg"
+                  alt="location"
+                />
+              </div>
+              <div class="Advantage-text">Blízko do centra</div>
+            </section>
+          </div>
+        </section>
 
-        <div class="Section-Map">
-            <div id="Section-Map-Frame"></div>
-        </div>
+        <section class="Section-Map">
+          <div id="Section-Map-Frame"></div>
+        </section>
 
-        <div class="Section-Tarifs">
-            <div class="Tarifs">
-                <div class="Tarifs-element">
-                    <div class="Tarifs-image">
-                        <img class="Tarifs-img" src="img/ic_eternity.svg" alt="eternity">
-                    </div>
-                    <div class="Tarifs-title">1 měsíc</div>
-                    <ul class="Tarifs-Benefits-list">
-                        <li>přístup 24/7</li>
-                        <li>fixní stůl</li>
-                        <li>kafe a další dobroty</li>
-                        <li>vstup na akce v HUBu zdarma</li>
-                    </ul>
-                    <div class="Tarifs-price">
-                        2500 Kč
-                    </div>
-                </div>
+        <section class="Section-Tarifs">
+          <div class="Tarifs">
+            <div class="Tarifs-element">
+              <div class="Tarifs-image">
+                <img
+                  class="Tarifs-img"
+                  src="img/ic_eternity.svg"
+                  alt="eternity"
+                />
+              </div>
+              <div class="Tarifs-title">1 měsíc</div>
+              <ul class="Tarifs-Benefits-list">
+                <li>přístup 24/7</li>
+                <li>fixní stůl</li>
+                <li>kafe a další dobroty</li>
+                <li>vstup na akce v HUBu zdarma</li>
+              </ul>
+              <div class="Tarifs-price">
+                2500 Kč
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
         <a class="Action-button Tarifs-button" href="mailto:hub@techheaven.org">
-            Nezávazně vyzkoušet
+          Nezávazně vyzkoušet
         </a>
-    </div>
-</div>
-<script>
-    function initMap() {
+      </div>
+    </main>
+    <script>
+      function initMap() {
         var targetNode = document.getElementById('Page-Hub');
 
         if (targetNode.style.display != 'none') {
-            startMap()
+          startMap();
         } else {
-            var observer = new MutationObserver(function () {
-                if (targetNode.style.display != 'none') {
-                    startMap()
-                }
-            });
-            observer.observe(targetNode, {attributes: true, childList: true});
+          var observer = new MutationObserver(function() {
+            if (targetNode.style.display != 'none') {
+              startMap();
+            }
+          });
+          observer.observe(targetNode, { attributes: true, childList: true });
         }
-    }
+      }
 
-    function startMap() {
-        const hub = {lat: 49.736596, lng: 13.381467};
-        const map = new google.maps.Map(document.getElementById('Section-Map-Frame'), {
+      function startMap() {
+        const hub = { lat: 49.736596, lng: 13.381467 };
+        const map = new google.maps.Map(
+          document.getElementById('Section-Map-Frame'),
+          {
             center: hub,
-            zoom: 14
-        });
+            zoom: 14,
+          }
+        );
 
-        const marker = new google.maps.Marker({position: hub, map: map});
-    }
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8j4VUDJ2ESfJHht0rMXMTaO0zwQbZIMI&callback=initMap"
-        async defer></script>
-
+        const marker = new google.maps.Marker({ position: hub, map: map });
+      }
+    </script>
 
 </body>
 </html>
