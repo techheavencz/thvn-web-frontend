@@ -22,7 +22,7 @@ export class EventBox {
                         <img class="map-img" src="img/map.svg" alt="map-img">
                         <span>${this.event.place}</span>
                     </span>
-                    <a class="Prev-event-info-link" target="_blank"href=${this.event.event_url}>
+                    <a class="Prev-event-info-link" target="_blank" rel="noopener" href=${this.event.event_url}>
                         <img class="Prev-event-info-img" src="img/facebook-logo.svg">
                     </a>
                 </div>
