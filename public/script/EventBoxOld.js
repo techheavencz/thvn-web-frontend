@@ -17,7 +17,7 @@ export class EventBoxOld {
         this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
             <div class="Prev-event-details">
-                <div class="Prev-event-title">${escape(this.event.title)}</div>
+                <a class="Prev-event-title" href="${escape(this.event.event_url)}" target="_blank" rel="noopener">${escape(this.event.title)}</a>
                 <div class="Prev-event-info">
                     <span class="Prev-event-info-date">${escape(this.event.date.getDate())}. ${this.month}. ${escape(this.event.date.getFullYear())}</span>
                     <span class="Prev-event-info-place">
