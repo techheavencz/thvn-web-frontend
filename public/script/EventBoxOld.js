@@ -1,3 +1,5 @@
+import {htmlEscape as escape} from './Helpers.js';
+
 export class EventBoxOld {
     constructor(event, targetElement) {
         this.event = event;
@@ -15,14 +17,14 @@ export class EventBoxOld {
         this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
             <div class="Prev-event-details">
-                <div class="Prev-event-title">${this.event.title}</div>
+                <div class="Prev-event-title">${escape(this.event.title)}</div>
                 <div class="Prev-event-info">
-                    <span class="Prev-event-info-date">${this.event.date.getDate()}. ${this.month}. ${this.event.date.getFullYear()}</span>
+                    <span class="Prev-event-info-date">${escape(this.event.date.getDate())}. ${this.month}. ${escape(this.event.date.getFullYear())}</span>
                     <span class="Prev-event-info-place">
                         <img class="map-img" src="img/map.svg" alt="map-img">
-                        <span>${this.event.place}</span>
+                        <span>${escape(this.event.place)}</span>
                     </span>
-                    <a class="Prev-event-info-link" target="_blank" rel="noopener" href=${this.event.event_url}>
+                    <a class="Prev-event-info-link" target="_blank" rel="noopener" href=${escape(this.event.event_url)}>
                         <img class="Prev-event-info-img" src="img/facebook-logo.svg">
                     </a>
                 </div>
