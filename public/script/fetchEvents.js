@@ -1,4 +1,5 @@
 import {Event} from "./Event.js";
+
 const API_URL = `https://techheaven-general.appspot.com`;
 
 export async function fetchEvents() {
