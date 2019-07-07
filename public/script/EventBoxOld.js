@@ -7,13 +7,15 @@ export class EventBoxOld {
         this._createContainer(this.event.cover_url);
         this.render();
     }
-    _createContainer(cover){
+
+    _createContainer(cover) {
         this.container = document.createElement("div");
-        this.container.style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 74.59%, #000000 100%), url(" + cover +" ) no-repeat 50% 50%";
+        this.container.style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 74.59%, #000000 100%), url(" + cover + " ) no-repeat 50% 50%";
         this.container.classList.add("Prev-event-element");
         this.targetElement.appendChild(this.container);
     }
-    render(){
+
+    render() {
         this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
             <div class="Prev-event-details">

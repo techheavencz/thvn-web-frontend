@@ -6,10 +6,12 @@ export class EventPrev {
         this._setContainer();
         this.render();
     }
-    _setContainer(){
+
+    _setContainer() {
         this.container = document.getElementById("Next-event")
     }
-    render(){
+
+    render() {
         this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
             <a class="Next-event-title" href="${escape(this.event.event_url)}" target="_blank" rel="noopener">${escape(this.event.title)}</a>
