@@ -1,5 +1,4 @@
 html, body {
-  height: 100vh;
   margin: 0;
   padding: 0; }
 
@@ -37,14 +36,10 @@ p {
   min-height: calc(90% - 75px); }
 
 .block {
-  height: auto;
-  position: relative;
   display: flex;
   align-items: center;
   justify-items: center;
   box-sizing: border-box;
-  overflow: hidden;
-  z-index: -20;
   background-color: #000;
   padding: 20px 0; }
   .block .background {
@@ -68,7 +63,9 @@ p {
       z-index: 4; }
   .block:first-of-type {
     padding-top: 75px;
-    height: 100%; }
+    min-height: 680px;
+    height: 100vh;
+  }
   .block .note {
     width: 100%;
     color: white;
@@ -96,6 +93,10 @@ p {
     display: block; }
   .block .hub-image {
     max-height: 400px; }
+  .in_row{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 nav {
   position: fixed;
@@ -213,7 +214,8 @@ h1, h2, h3 {
   color: #EEE; }
 
 h2 {
-  font-size: 45px; }
+  font-size: 45px;
+  margin-bottom: 20px; }
 
 .center-box {
   margin-left: auto;
@@ -227,10 +229,10 @@ h2 {
   font-size: 2em; }
 
 .larger {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
 .text-block {
-  padding: 0 30px; }
+  padding: 60px 30px; }
 
 .person {
   text-align: center;
@@ -244,7 +246,7 @@ h2 {
   .person .name {
     font-size: 1.5em;
     font-weight: bold;
-    color: #000; }
+  }
   .person .position {
     font-size: 1.2em;
     font-weight: bold; }
@@ -315,5 +317,10 @@ footer {
         padding-left: 0; } }
   .partner:after {
     clear: both; }
-
+.hub {
+  text-align: center;
+}
+.info {
+  margin-top: 15px;
+}
 /*# sourceMappingURL=main.css.map */
