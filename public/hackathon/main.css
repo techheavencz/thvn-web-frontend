@@ -23,7 +23,6 @@ p {
   text-align: justify; }
 
 .w60 {
-  width: 50%;
   margin-left: auto;
   margin-right: auto; }
 
@@ -62,7 +61,7 @@ p {
       background: rgba(0, 0, 0, 0.8);
       z-index: 4; }
   .block:first-of-type {
-    padding-top: 75px;
+    margin-top: 30px;
     min-height: 680px;
     height: 100vh;
   }
@@ -104,7 +103,7 @@ nav {
   left: 0;
   right: 0;
   background: #000;
-  box-shadow: rgba(238, 238, 238, 0.3) 0 0 25px 0px;
+  box-shadow: rgba(238, 238, 238, 0.1) 0 0 25px 0px;
   color: white;
   overflow: auto;
   padding: 0 30px;
@@ -122,21 +121,21 @@ nav {
     float: left; }
     nav .logo:hover {
       cursor: pointer; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 770px) {
       nav .logo {
-        background: url("logo.png") no-repeat center left 30px;
+        background: url("logo.png") no-repeat center left 20px;
         background-size: auto 90%;
-        padding-left: 100px; } }
+        padding-left: 90px; } }
   nav .show-nav {
     margin-right: 30px;
     line-height: 75px;
     float: right; }
     nav .show-nav:hover {
       cursor: pointer; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 770px) {
     nav {
       padding: 0; } }
-  @media screen and (min-width: 601px) {
+  @media screen and (min-width: 771px) {
     nav .show-nav {
       display: none; } }
   nav ul {
@@ -144,7 +143,7 @@ nav {
     margin: auto -10px auto 0;
     float: right;
     overflow: auto; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 770px) {
       nav ul {
         display: none; }
         nav ul.show-mobile {
@@ -215,7 +214,7 @@ h1, h2, h3 {
 
 h2 {
   font-size: 45px;
-  margin-bottom: 20px; }
+  margin-bottom: 15px; }
 
 .center-box {
   margin-left: auto;
@@ -246,6 +245,7 @@ h2 {
   .person .name {
     font-size: 1.5em;
     font-weight: bold;
+    margin: 15px 0 5px 0;
   }
   .person .position {
     font-size: 1.2em;
@@ -287,6 +287,10 @@ footer {
 .margin-top {
   margin-top: 25px; }
 
+.margin-toper{
+  margin-top: 30px;
+}
+
 .partner {
   display: flex;
   justify-content: center;
@@ -302,7 +306,7 @@ footer {
     padding-left: 20px;
     height: auto;
     align-self: center; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 770px) {
     .partner {
       display: block; }
       .partner .logo {
@@ -320,7 +324,33 @@ footer {
 .hub {
   text-align: center;
 }
-.info {
-  margin-top: 15px;
+.copy {
+  text-align: end;
+  font-size: 15px;
+}
+.Section-Map{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  flex-direction:row;
+  -webkit-box-pack:center;
+  justify-content:center;
+  align-content:center;
+  }
+
+#Section-Map-Frame{
+  width:800px;
+  height:400px;
+  border-radius:4px;
+  overflow:hidden}
+
+@media screen and (max-width: 440px) {
+  .w60{
+    width: 70%;
+  }
+  .block:first-of-type {
+    padding-top: 220px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
