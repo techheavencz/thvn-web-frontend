@@ -4,26 +4,25 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 
 const paths = {
-  style: {
-    src: 'src/style/*.sass',
-    dest: 'public/style',
-  },
+    style: {
+        src: 'src/style/*.sass',
+        dest: 'public/style',
+    },
 };
 
 function style() {
-  return gulp
-    .src(paths.style.src)
-    .pipe(sass())
-    .pipe(autoprefixer())
-    .pipe(cleanCSS())
-    .pipe(gulp.dest(paths.style.dest));
+    return gulp
+        .src(paths.style.src)
+        .pipe(sass())
+        .pipe(autoprefixer())
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(paths.style.dest));
 }
 
 function watch() {
-  gulp.watch(paths.style.src, style);
+    return gulp.watch(paths.style.src, style);
 }
 
-gulp.task('default', function() {
-  style();
-  watch();
-});
+exports.default = gulp.series(style, watch);
+exports.build = style;
+exports.watch = watch;
