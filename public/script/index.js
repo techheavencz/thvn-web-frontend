@@ -35,6 +35,8 @@ export async function redirectOldUrls() {
         return false;
     }
 
-    location.href = '/' + matches[1];
+    const newUrl = '/' + matches[1];
+    if(console) console.debug('Redirecting old URL %s to new %s', hash, newUrl);
+    location.href = newUrl;
     return true;
 }

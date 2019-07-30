@@ -65,12 +65,10 @@
 </section>
 
 <script type="module">
-    import {main, redirectOldUrls} from './script/index.js';
+    import {redirectOldUrls, main} from './script/index.js';
 
-    const isRedirecting = await redirectOldUrls();
-    if (!isRedirecting){
-        main();
-    }
+    // On HP check old URLs first, than run app `main()`;
+    redirectOldUrls().then(isRedirecting => isRedirecting ? null : main());
 </script>
 </body>
 </html>
