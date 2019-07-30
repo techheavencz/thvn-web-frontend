@@ -65,9 +65,10 @@
 </section>
 
 <script type="module">
-    import {main} from './script/index.js';
+    import {redirectOldUrls, main} from './script/index.js';
 
-    main();
+    // On HP check old URLs first, than run app `main()`;
+    redirectOldUrls().then(isRedirecting => isRedirecting ? null : main());
 </script>
 </body>
 </html>

@@ -27,3 +27,16 @@ export async function main() {
         new EventBoxOld(event, containerEl);
     }
 }
+
+export async function redirectOldUrls() {
+    const hash = window.location.hash;
+    const matches = hash.match(/^#(hub|org)$/);
+    if(matches === null) {
+        return false;
+    }
+
+    const newUrl = '/' + matches[1];
+    if(console) console.debug('Redirecting old URL %s to new %s', hash, newUrl);
+    location.href = newUrl;
+    return true;
+}
