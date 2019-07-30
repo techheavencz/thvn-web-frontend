@@ -1,39 +1,43 @@
-# thvn-web-frontend
+# [Techheaven web](https://techheaven.org/)
 
-### Gulp workflow instructions (for writing Sass that automatically compiles to CSS)
+## Requirements
+- Node.js v8 or above
+- Yarn ([read more](https://yarnpkg.com/en/docs/install))
+- Firebase tools ([read more](https://firebase.google.com/docs/cli))   
 
-#### Step 1
+## Instalation 
 
+### Step 1 - Preprare your dev-stack
 Install Gulp (unless you already have)
-
 ```
 npm install gulp-cli -g
 ```
 
+### Step 2 - Project dependencies
+Install all dependencies of the project
 ```
-npm install gulp -D
-```
-
-#### Step 2
-
-Install all dependencies of the project (in case you haven't done so since the commit that added a bunch of dependencies)
-
-```
-npm install
+yarn
 ```
 
-#### Step 3
+It should you call every time you pull new version of app from GitHub.  
 
-Run Gulp in terminal
-
+### Step 3 - Build
 ```
-gulp
+gulp build
 ```
+That's re-generate all compiled files in `public/style/` directory.
 
-#### And you're done!
+You can also call `gulp watch` to automatically re-generate files immediately
+than you change any monitored files (all in `src/style` directory).
 
-Now every time you make changes to any Sass files in the `src/style` folder (including new files) and hit save, Gulp automatically runs the task that compiles your Sass files to CSS and thereafter adds all necessary prefixes (to improve browser coverage), minifies the CSS files and stores them in the `public/style` folder.
+### Step 4 - Run app locally
+```
+firebase serve
+```
+Start's local server (usually at URL http://localhost:5000/) with app.
 
-_Note: For Gulp to "watch" your `src/style` folder (meaning it will automatically run the necessary task whenever you save changes to the Sass files), it needs to be running in your terminal. Basically don't close the terminal tab/window in which you executed `gulp` until you're done making changes._
-
----
+### Step 5 - Deploy app to server
+```
+firebase deploy
+```
+It can call only users with access to [Firebase `techheaven-general` project](https://console.firebase.google.com/project/techheaven-general).
