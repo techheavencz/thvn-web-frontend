@@ -27,3 +27,14 @@ export async function main() {
         new EventBoxOld(event, containerEl);
     }
 }
+
+export async function redirectOldUrls() {
+    const hash = window.location.hash;
+    const matches = hash.match(/^#(hub|org)$/);
+    if(matches === null) {
+        return false;
+    }
+
+    location.href = '/' + matches[1];
+    return true;
+}
