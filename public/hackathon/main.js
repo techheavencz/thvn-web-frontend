@@ -15,4 +15,14 @@ $(document).ready(function() {
     scrollToAnchor(id);
     $('.navnav').removeClass('show-mobile');
   });
+
+  $('.challenge .challenge-title').click(function () {
+    var parent = $(this).closest('.challenge');
+    if (parent.hasClass('opened')) {
+      parent.removeClass('opened');
+    } else {
+      $('.challenge').removeClass('opened');
+      parent.addClass('opened');
+    }
+  });
 });
