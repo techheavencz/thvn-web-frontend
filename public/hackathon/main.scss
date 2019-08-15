@@ -472,25 +472,26 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-
+.challenge-themes {
+  text-align: right;
+}
 .challenge {
-  // TODO uncomment when body is filled
-  //&.opened {
-  //  .challenge-title {
-  //    &:before {
-  //      content: "\f078";
-  //    }
-  //  }
-  //  .challenge-body {
-  //    display: block;
-  //  }
-  //}
+  &.opened {
+    .challenge-title {
+      &:before {
+        content: "\f078";
+      }
+    }
+    .challenge-body {
+      display: block;
+    }
+  }
   .challenge-title {
     font-weight: bold;
     font-size: 1.3em;
-    line-height: 0.9em;
+    line-height: 1.2em;
     margin-bottom: 20px;
-    //cursor: pointer;
+    cursor: pointer;
     &:before {
       content: "\f054";
       font-family: "Font Awesome 5 Free";
