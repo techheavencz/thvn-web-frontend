@@ -10,12 +10,11 @@ $(document).ready(function() {
 
   $('[data-slide-target]').click(function() {
     var id = $(this).data('slide-target');
-    console.log(this);
-    console.log(id);
     scrollToAnchor(id);
     $('.navnav').removeClass('show-mobile');
   });
 
+  // Challenges folding
   $('.challenge .challenge-title').click(function () {
     var parent = $(this).closest('.challenge');
     if (parent.hasClass('opened')) {
@@ -25,4 +24,7 @@ $(document).ready(function() {
       parent.addClass('opened');
     }
   });
+
+  // Start Challenges folding
+  $('.challenges').addClass('folding');
 });

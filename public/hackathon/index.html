@@ -6,12 +6,12 @@
     <title>Smart City Hackathon</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/hackathon/main.css?v=8"/>
+    <link rel="stylesheet" type="text/css" href="/hackathon/main.css?v=9"/>
     <link rel="shortcut icon" href="/hackathon/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="/hackathon/main.js?v=8"></script>
+    <script src="/hackathon/main.js?v=9"></script>
     <base>
     <script>
         (function (w, d, s, l, i) {
@@ -91,7 +91,7 @@
                 <div class="text text-block">
                     <h2>Výzvy</h2>
                     <div class="challenges">
-                        <div class="challenge">
+                        <div class="challenge" id="challenge-prestupky">
                             <div class="challenge-title">
                                 Zanalyzovat data Městské policie o přestupcích v Plzni a okolí
                             </div>
@@ -100,11 +100,11 @@
                                     Městská policie
                                 </div>
                                 <div class="challenge-description">
-                                    Povedlo se nám přesvědčit městskou policii, aby kvůli hackathonu zveřejnila data o přestupcích na území města Plzně. Prací pro všechny dataře, analytiky a nadšence do otevřených dat bude tento dataset vyčistit, vizualizovat a třeba také najít zajímavé souvislosti mezi přestupky a dalšími daty z <a href="https://opendata.plzen.eu">opendata.plzen.eu</a> a dalších veřejných datasetů.
+                                    Povedlo se nám přesvědčit Městskou policii Plzeň, aby kvůli hackathonu zveřejnila data o přestupcích na území města Plzně. Prací pro všechny dataře, analytiky a nadšence do otevřených dat bude tento dataset vyčistit, vizualizovat a třeba také najít zajímavé souvislosti mezi přestupky a dalšími daty z <a href="https://opendata.plzen.eu/">opendata.plzen.eu</a> a dalších veřejných datasetů.
                                 </div>
                             </div>
                         </div>
-                        <div class="challenge">
+                        <div class="challenge" id="challenge-divadlo">
                             <div class="challenge-title">
                                 Navrhnout systém hodnocení představení na scénách plzeňského divadla
                             </div>
@@ -113,12 +113,12 @@
                                     Divadlo J. K. Tyla
                                 </div>
                                 <div class="challenge-description">
-                                    Plzeňské divadlo mé 3 scény a 4 soubory, nemá ale jednu poměrně triviální věc a to jsou data. Konkrétně data o tom, která představení jsou jak populární (jak se účastníkům líbí), podle nichž by mohli jednak zpětně vyhodnocovat kvalitu, ale také vybírat představení do budoucna.
+                                    Plzeňské divadlo mé 3 scény a 4 soubory, nemá ale jednu poměrně triviální věc a to jsou data. Konkrétně data o tom, která představení jsou jak populární (jak se účastníkům líbí), podle nichž by mohli jednak zpětně vyhodnocovat kvalitu, ale také vybírat představení do budoucna.<br>
                                     Proto by Divadlo J. K. Tyla chtělo vymyslet nějaký kreativní způsob, jak tato data sbírat, který by byl efektivní a zároveň by ho diváci rádi využívali.
                                 </div>
                             </div>
                         </div>
-                        <div class="challenge">
+                        <div class="challenge" id="challenge-turismus">
                             <div class="challenge-title">
                                 Vymyslet způsob, jak pomocí mobilního telefonu oslovit turisty ve městě
                             </div>
@@ -127,12 +127,12 @@
                                     Plzeň TURISMUS
                                 </div>
                                 <div class="challenge-description">
-                                    Do Plzně každý rok přijíždí množství turistů ze zahraničí i z jiných měst ČR a spousta z nich neví, kde se v Plzni dobře najíst, kam zajít na pivo a která zákoutí Plzně určitě neminout. Infocentrum je proto zahlceno stále se opakujícími dotazy na restaurace, výčepy, památky a další desítky věcí, které turistům pořád dokola opakují.
-                                    Proto by chtěli od účastníků Smart City hackathonu dát dohromady způsob, jakým by se informace mohli k turistům dostat, aniž by se vůbec museli přijít zeptat do infocentra.
+                                    Do Plzně každý rok přijíždí množství turistů ze zahraničí i z jiných měst ČR a spousta z nich neví, kde se v Plzni dobře najíst, kam zajít na pivo a která zákoutí Plzně určitě neminout. Infocentrum je proto zahlceno stále se opakujícími dotazy na restaurace, výčepy, památky a další desítky věcí, které turistům pořád dokola opakují.<br>
+                                    Proto by chtěli od účastníků Smart City hackathonu dát dohromady způsob, jakým by se informace mohly k turistům dostat, aniž by se vůbec museli přijít zeptat do infocentra.
                                 </div>
                             </div>
                         </div>
-                        <div class="challenge">
+                        <div class="challenge" id="challenge-sit">
                             <div class="challenge-title">
                                 Využít datové schránky ke zjednodušení komunikace Plzeňáků s úřady
                             </div>
@@ -141,12 +141,12 @@
                                     Správa informačních technologií města Plzně
                                 </div>
                                 <div class="challenge-description">
-                                    Správa informačních technologií města Plzně momentálně připravuje novou verzi Životních situací - systéu navazujícímu například na <a href="https://uradbezcekani.cz">uradbezcekani.cz</a>, který by měl občanům Plzně usnadnit vyřizování věcí na úřadech. První část tohoto projektu je webový rozcestník - místo, kde si člověk podle situace, ve které se nachází (například se chce rozvést) může najít, co všechno by měl udělat a s úřady vyřešit.
-                                    Druhou částí (která je předmětem tohoto hackthonového téma) je i vyřešení dané situace online. Člověk místo obíhání úřadů bude moci rovnou vyplnit online formulář a například skrze datovou schránku ho předat na úřad, kde už za něj vše vyřeší.
+                                    Správa informačních technologií města Plzně momentálně připravuje novou verzi Životních situací – systému navazujícího například na <a href="https://uradbezcekani.cz">uradbezcekani.cz</a>, který by měl občanům Plzně usnadnit vyřizování věcí na úřadech. První část tohoto projektu je webový rozcestník – místo, kde si člověk podle situace, ve které se nachází (například se chce rozvést), může najít, co všechno by měl udělat a s úřady vyřešit.<br>
+                                    Druhou částí (která je předmětem tohoto hackathonového tématu) je i vyřešení dané situace online. Člověk místo obíhání úřadů bude moci rovnou vyplnit online formulář a například skrze datovou schránku ho předat na úřad, kde už za něj vše vyřeší.
                                 </div>
                             </div>
                         </div>
-                        <div class="challenge">
+                        <div class="challenge" id="challenge-skoly">
                             <div class="challenge-title">
                                 Vytvořit webovou platformu pro mateřské školy v Plzni
                             </div>
@@ -155,11 +155,11 @@
                                     38. MŠ
                                 </div>
                                 <div class="challenge-description">
-                                    Mateřským školám v Plzni chybí způsob, jakým by mohly jednoduše komunikovat s rodiči, evidovat si děti ve třídách a na základě toho potom kontrolovat docházku. Líbilo by se jim, kdyby měli nějakou webovou aplikaci, která by nahradila jednak papírovou třídní kniho a taky praktiku posílání vzkazů po dětech. Pokud se vám povede vytvořit pěkný funkční systém, uvede se nejprve do provozu na 38. MŠ a po otestování by se mohl rozšířit na všechny školky v Plzni.
+                                    Mateřským školám v Plzni chybí způsob, jakým by mohly jednoduše komunikovat s rodiči, evidovat si děti ve třídách a na základě toho potom kontrolovat docházku. Líbilo by se jim, kdyby měli nějakou webovou aplikaci, která by nahradila jednak papírovou třídní knihu a taky praktiku posílání vzkazů po dětech. Pokud se vám povede vytvořit pěkný funkční systém, uvede se nejprve do provozu na 38. MŠ a po otestování by se mohl rozšířit na všechny školky v Plzni.
                                 </div>
                             </div>
                         </div>
-                        <div class="challenge">
+                        <div class="challenge" id="challenge-drony">
                             <div class="challenge-title">
                                 Vyvinout systém, který bude pomocí dronů scannovat 3D modely vnitřních prostor
                             </div>
@@ -168,8 +168,8 @@
                                     Drony SITMP
                                 </div>
                                 <div class="challenge-description">
-                                    Jednou z věcí, která v posledních letech pod Správou informačních technologií v Plzni vznikla, jsou i Drony SITMP - oddělení, které se zabývá zmapováním situace při požárech, kontrolou statiky mostů, nebo také monitorováním problémových fanoušků při důležitých zápasech Viktorky. To vše za použití dronů.
-                                    Projektem, který právě teď řeší, je swarmové mapování. Nejprve bude potřeba vychytat přenos obrazu a mapování uvnitř (vhodné například k vytvoření vnitřního 3D modelu katedrály svatého Bartoloměje), později se předpokládá také využití venku ve větších „hejnech (swarm).
+                                    Jednou z věcí, která v posledních letech pod Správou informačních technologií v Plzni vznikla, jsou i Drony SITMP – oddělení, které se zabývá zmapováním situace při požárech, kontrolou statiky mostů, nebo také monitorováním problémových fanoušků při důležitých zápasech Viktorky. To vše za použití dronů.<br>
+                                    Projektem, který právě teď řeší, je swarmové mapování. Nejprve bude potřeba vychytat přenos obrazu a mapování uvnitř (vhodné například k vytvoření vnitřního 3D modelu katedrály svatého Bartoloměje), později se předpokládá také využití venku ve větších „hejnech“ (swarm).<br>
                                     SITMP plánuje na projektu pokračovat i po hackathonu a nabízí spolupráci týmu, který se bude tomuto tématu věnovat.
                                 </div>
                             </div>
@@ -296,5 +296,38 @@
         </div>
     </div>
 </footer>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "name": "Smart City Hackathon",
+        "startDate" : "2019-09-06T18:00+0200",
+        "endDate" : "2019-09-08T13:00+0200",
+        "url" : "http://schema.org",
+        "location" : {
+            "@type" : "Place",
+            "sameAs" : "https://techheaven.org/hub",
+            "name" : "HUB 2.0",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "Cukrovarská 3006/20",
+                "addressLocality" : "Plzeň 3-Jižní Předměstí",
+                "postalCode" : "301 00"
+            },
+            "geo" : {
+                "@type" : "GeoCoordinates",
+                "latitude" : 49.736582,
+                "longitude" :  13.3793696
+            }
+        },
+        "offers" : {
+            "@type" : "Offer",
+            "description": "Koupit vstupenky"
+            "price" : 150,
+            "priceCurrency" : "CZK",
+            "url" : "https://techheaven.org/hackathon#vstupenky"
+        }
+    }
+</script>
 </body>
 </html>
