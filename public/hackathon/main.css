@@ -405,11 +405,23 @@ footer {
   display: flex;
   flex-wrap: wrap; }
 
+.challenge-themes {
+  text-align: right;
+}
+
+.challenge.opened .challenge-title:before{
+  content: "\f078"
+}
+.challenge.opened .challenge-body {
+  display: block;
+}
+
 .challenge .challenge-title {
   font-weight: bold;
   font-size: 1.3em;
-  line-height: 0.9em;
-  margin-bottom: 20px; }
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  cursor: pointer; }
   .challenge .challenge-title:before {
     content: "\f054";
     font-family: "Font Awesome 5 Free";
