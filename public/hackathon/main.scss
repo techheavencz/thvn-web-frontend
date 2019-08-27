@@ -216,21 +216,6 @@ nav {
     float: right;
     overflow: auto;
 
-    a {
-      color: #b164a5;
-
-      &:hover {
-        text-decoration: none;
-      }
-
-      li {
-        &:hover {
-          color: #b164a5;
-          border-bottom: $nav-sub solid #b164a5;
-        }
-      }
-    }
-
     li {
       text-transform: uppercase;
       display: block;
@@ -254,6 +239,15 @@ nav {
         border-bottom: $nav-sub solid $complementary;
         padding-bottom: $nav-padding - $nav-sub;
         color: $complementary;
+      }
+
+      &.highlight {
+        color: #b164a5;
+
+        &:hover {
+          color: #b164a5;
+          border-bottom: $nav-sub solid #b164a5;
+        }
       }
 
       a {
