@@ -1,30 +1,36 @@
-function scrollToAnchor(aid){
-  var aTag = $("#"+ aid);
-    $('html,body').animate({scrollTop: aTag.offset().top-75},'slow');
-}
-
-$(document).ready(function() {
-  $('.show-nav').click(function () {
-    $('.navnav').toggleClass('show-mobile');
-  });
-
-  $('[data-slide-target]').click(function() {
-    var id = $(this).data('slide-target');
-    scrollToAnchor(id);
-    $('.navnav').removeClass('show-mobile');
-  });
-
-  // Challenges folding
-  $('.challenge .challenge-title').click(function () {
-    var parent = $(this).closest('.challenge');
-    if (parent.hasClass('opened')) {
-      parent.removeClass('opened');
-    } else {
-      $('.challenge').removeClass('opened');
-      parent.addClass('opened');
+$(() => {
+    function scrollToAnchor(anchorId) {
+        const scrollTo = $("#" + anchorId).offset().top - 75;
+        $('html, body').animate({scrollTop: scrollTo}, 'slow');
     }
-  });
 
-  // Start Challenges folding
-  $('.challenges').addClass('folding');
+    const navnavEl = $('.navnav');
+
+    // Toogle navigation for mobile layout
+    $('.show-nav').click(() => {
+        navnavEl.toggleClass('show-mobile');
+    });
+
+    // Trigger to handle clicks on fake links
+    $('nav [data-slide-target]').on('click', event => {
+        const anchorId = $(event.target).data('slide-target');
+        scrollToAnchor(anchorId);
+        navnavEl.removeClass('show-mobile');
+    });
+
+    // Challenges folding
+    const challengeEl = $('.challenge');
+    challengeEl.on("click", '.challenge-title', event => {
+        const parent = $(event.target).closest('.challenge');
+        if (parent.hasClass('opened')) {
+            parent.removeClass('opened');
+        } else {
+
+            challengeEl.removeClass('opened');
+            parent.addClass('opened');
+        }
+    });
+
+    // Start Challenges folding
+    $('.challenges').addClass('folding');
 });
