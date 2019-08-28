@@ -254,16 +254,6 @@ nav ul {
     line-height: 75px;
   }
 }
-nav ul a {
-  color: #b164a5;
-}
-nav ul a:hover {
-  text-decoration: none;
-}
-nav ul a li:hover {
-  color: #b164a5;
-  border-bottom: 2px solid #b164a5;
-}
 nav ul li {
   text-transform: uppercase;
   display: block;
@@ -285,6 +275,13 @@ nav ul li:hover {
   border-bottom: 2px solid #EEE;
   padding-bottom: 8px;
   color: #EEE;
+}
+nav ul li.highlight {
+  color: #b164a5;
+}
+nav ul li.highlight:hover {
+  color: #b164a5;
+  border-bottom: 2px solid #b164a5;
 }
 nav ul li a {
   text-decoration: none;

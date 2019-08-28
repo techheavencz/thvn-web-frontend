@@ -6,12 +6,12 @@
     <title>Smart City Hackathon</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/hackathon/main.css?v=9"/>
+    <link rel="stylesheet" type="text/css" href="/hackathon/main.css?v=10"/>
     <link rel="shortcut icon" href="/hackathon/favicon.ico" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="/hackathon/main.js?v=9"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" defer integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" defer integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="/hackathon/main.js?v=10" defer></script>
     <base>
     <script>
         (function (w, d, s, l, i) {
@@ -36,8 +36,7 @@
     <ul class="navnav">
         <li data-slide-target="o-akci">O akci</li>
         <li data-slide-target="misto">Místo</li>
-<!--        <li data-slide-target="porada">Pořádá</li>-->
-        <a href="https://goout.net/cs/listky/smart-city-hackathon/qnye/"><li>Vstupenky</li></a>
+        <li class="highlight"><a href="https://goout.net/cs/listky/smart-city-hackathon/qnye/" target="_blank" rel="noopener">Vstupenky</a></li>
         <li data-slide-target="kontakty">Kontakty</li>
         <li><a href="https://www.facebook.com/events/2629639427081294/"><i class="fab fa-facebook-f"></i></a></li>
     </ul>
@@ -292,7 +291,6 @@
             © 2019 TechHeaven
         </div>
         <div class="col-md-auto text-right ml-auto">
-<!--            <a href="#">Odkaz</a>-->
         </div>
     </div>
 </footer>
@@ -322,7 +320,7 @@
         },
         "offers" : {
             "@type" : "Offer",
-            "description": "Koupit vstupenky"
+            "description": "Koupit vstupenky",
             "price" : 150,
             "priceCurrency" : "CZK",
             "url" : "https://techheaven.org/hackathon#vstupenky"
