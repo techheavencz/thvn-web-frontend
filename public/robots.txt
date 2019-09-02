@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://techheaven.org/sitemap.xml
