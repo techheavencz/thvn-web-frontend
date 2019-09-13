@@ -170,7 +170,7 @@ nav {
   background: $main;
   box-shadow: rgba($complementary, 0.1) 0 0 25px 0;
   color: white;
-  overflow: auto;
+  overflow: hidden;
   padding: 0 30px;
   box-sizing: border-box;
   z-index: 100;
@@ -559,9 +559,14 @@ footer {
 
       .challenge-description {
         margin-top: 10px;
-        margin-bottom: 50px;
         font-size: 1.1em;
         text-align: justify;
+        margin-bottom: 20px;
+      }
+
+      .challenge-prize {
+        margin-bottom: 80px;
+        font-size: 1.1em;
       }
     }
   }
