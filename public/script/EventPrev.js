@@ -1,4 +1,4 @@
-import {htmlEscape as escape} from './Helpers.js';
+import {htmlEscape as escape, formatDate} from './Helpers.js';
 
 export class EventPrev {
     constructor(event) {
@@ -12,14 +12,13 @@ export class EventPrev {
     }
 
     render() {
-        this.month = this.event.date.getMonth() + 1;
         this.container.innerHTML = `
             <a class="Next-event-title" href="${escape(this.event.event_url)}" target="_blank" rel="noopener">${escape(this.event.title)}</a>
             <div class="Next-event-description">${escape(this.event.description).split("\n").join("<br>")}</div>
             <div class="Next-event-details">
                 <div class="Details-element">
                     <img class="calendar-img" src="img/calendar.svg" alt="calendar-img">
-                    <span>${escape(this.event.date.getDate())}. ${escape(this.month)}.</span>
+                    <span>${escape(formatDate(this.event.date))}</span>
                 </div>
                 <div class="Details-element">
                     <img class="map-img" src="img/map.svg" alt="map-img">
