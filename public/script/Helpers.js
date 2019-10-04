@@ -5,23 +5,12 @@ export function htmlEscape(input) {
 }
 
 export function formatDate(date) {
-    let timezone = 'Europe/Prague';
-    if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { // safari workaround
-        timezone = 'UTC';
-    }
-    return new Intl.DateTimeFormat('cs', {
+    return new Intl.DateTimeFormat('cs-CZ', {
         weekday: 'long',
         month: 'numeric',
         day: 'numeric',
         hour: 'numeric',
         minute: 'numeric',
-        timeZone: timezone,
+        timeZone: 'Europe/Prague',
     }).format(date);
 }
-
-export function pad(n, width) {
-    n = n + '';
-    return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
-}
-
-export const days = ['pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek', 'sobota', 'neděle'];
