@@ -5,13 +5,17 @@ export function htmlEscape(input) {
 }
 
 export function formatDate(date) {
+    let timezone = 'Europe/Prague';
+    if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { // safari workaround
+        timezone = 'UTC';
+    }
     return new Intl.DateTimeFormat('cs', {
         weekday: 'long',
         month: 'numeric',
         day: 'numeric',
         hour: 'numeric',
         minute: 'numeric',
-        timeZone: 'Europe/Prague',
+        timeZone: timezone,
     }).format(date);
 }
 
