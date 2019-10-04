@@ -11,7 +11,7 @@ export function formatDate(date) {
         day: 'numeric',
         hour: 'numeric',
         minute: 'numeric',
-        timeZone: 'UTC',
+        timeZone: 'Europe/Prague',
     }).format(date);
 }
 
