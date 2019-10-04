@@ -5,10 +5,14 @@ export function htmlEscape(input) {
 }
 
 export function formatDate(date) {
-    const month = date.getMonth() + 1;
-    const day = days[date.getDay() - 1];
-    const time = `${pad(date.getUTCHours(), 2)}:${pad(date.getUTCMinutes(), 2)}`;
-    return `${day} ${date.getDate()}. ${month}. ${time}`;
+    return new Intl.DateTimeFormat('cs', {
+        weekday: 'long',
+        month: 'numeric',
+        day:'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        timeZone: 'UTC',
+    }).format(date);
 }
 
 export function pad(n, width) {
