@@ -8,7 +8,7 @@ export function formatDate(date) {
     return new Intl.DateTimeFormat('cs', {
         weekday: 'long',
         month: 'numeric',
-        day:'numeric',
+        day: 'numeric',
         hour: 'numeric',
         minute: 'numeric',
         timeZone: 'UTC',
