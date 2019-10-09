@@ -41,3 +41,5 @@ Start's local server (usually at URL http://localhost:5000/) with app.
 firebase deploy
 ```
 It can call only users with access to [Firebase `techheaven-general` project](https://console.firebase.google.com/project/techheaven-general).
+
+Currently is deploy produced automactically by Travis CI. Just delivery new content do `master` branch on GitHub repository.
