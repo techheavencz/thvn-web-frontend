@@ -142,7 +142,7 @@ p {
 
 nav {
   .logo {
-    background: url("logo.png") no-repeat center left;
+    background: url("images/logo.png") no-repeat center left;
     background-size: auto 90%;
     height: $nav-height;
     line-height: $nav-height;
@@ -157,7 +157,7 @@ nav {
     }
 
     @media screen and (max-width: $nav-collapse) {
-      background: url("logo.png") no-repeat center left 20px;
+      background: url("images/logo.png") no-repeat center left 20px;
       background-size: auto 90%;
       padding-left: 90px;
     }

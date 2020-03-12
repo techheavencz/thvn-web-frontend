@@ -193,7 +193,7 @@ nav {
   z-index: 100;
 }
 nav .logo {
-  background: url("logo.png") no-repeat center left;
+  background: url("images/logo.png") no-repeat center left;
   background-size: auto 90%;
   height: 75px;
   line-height: 75px;
@@ -208,7 +208,7 @@ nav .logo:hover {
 }
 @media screen and (max-width: 770px) {
   nav .logo {
-    background: url("logo.png") no-repeat center left 20px;
+    background: url("images/logo.png") no-repeat center left 20px;
     background-size: auto 90%;
     padding-left: 90px;
   }
