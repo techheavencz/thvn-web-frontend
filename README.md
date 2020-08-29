@@ -7,10 +7,15 @@
 
 ## Instalation 
 
-### Step 1 - Preprare your dev-stack
-Install Gulp (unless you already have)
+### Step 1 - Preprare your dev-stack (unless you already have)
+Install [Gulp](https://gulpjs.com/)
 ```
 npm install gulp-cli -g
+```
+
+Install [Firebase CLI](https://firebase.google.com/docs/cli#mac-linux-npm)
+```
+npm install firebase-tools -g
 ```
 
 ### Step 2 - Project dependencies
