@@ -1,4 +1,4 @@
-$main: #000;
+$main: #2b1a23;
 $secondary: #111;
 $complementary: #EEE;
 $nav-sub: 2px;
@@ -19,6 +19,43 @@ body {
   background: #DDD;
   font-family: 'campton';
   position: relative;
+}
+
+@media (max-width: 420px) {
+
+  .mainlogo{
+    max-height: 300px;
+    margin: 15px 0;
+  }
+  .header {
+    font-size: 43px !important;
+  }
+
+  .logo {
+    font-size: 1.15em !important;
+    width: 300px !important;
+  }
+
+}
+
+.header {
+  font-weight: bold;
+  text-align: center;
+  color: #fee400;
+  line-height: .9;
+  font-size: 65px;
+}
+
+.date {
+  text-align: center;
+  font-weight: bold;
+  color: #67d2ae;
+  font-size: 2.7em;
+  line-height: 1;
+  span{
+    color: $complementary;
+    font-size: 1em;
+  }
 }
 
 .text-highlight {
@@ -105,7 +142,7 @@ p {
     .mainlogo {
       margin-bottom: 30px;
       object-fit: contain;
-      max-height: 300px;
+      max-height: 400px;
       @media screen and (max-height: 300px) {
         max-height: 80px;
       }
@@ -142,7 +179,7 @@ p {
 
 nav {
   .logo {
-    background: url("logo.png") no-repeat center left;
+    background: url("images/logo.png") no-repeat center left;
     background-size: auto 90%;
     height: $nav-height;
     line-height: $nav-height;
@@ -157,7 +194,7 @@ nav {
     }
 
     @media screen and (max-width: $nav-collapse) {
-      background: url("logo.png") no-repeat center left 20px;
+      background: url("images/logo.png") no-repeat center left 20px;
       background-size: auto 90%;
       padding-left: 90px;
     }
@@ -493,7 +530,7 @@ footer {
     width: 70%;
   }
   .block:first-of-type {
-    padding-top: 220px;
+    padding-top: 75px;
   }
 }
 
