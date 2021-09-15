@@ -16,13 +16,16 @@ export async function main() {
             i++;
         }
     }
-    eventsAct = eventsAct.reverse();
-    new EventPrev(eventsAct[0]);
-    events.splice(0, eventsAct.length);
-    eventsAct.splice(0, 1);
-    for (const event of eventsAct) {
-        new EventBox(event, containerElement);
-    }
+
+	if(eventsAct.length > 0){
+		eventsAct = eventsAct.reverse();
+		new EventPrev(eventsAct[0]);
+		events.splice(0, eventsAct.length);
+		eventsAct.splice(0, 1);
+		for (const event of eventsAct) {
+			new EventBox(event, containerElement);
+		}
+	}
     for (const event of events) {
         new EventBoxOld(event, containerEl);
     }
