@@ -1,0 +1,29 @@
+.card{
+  display: grid;
+  border-width: 2px;
+  border-radius: 25px;
+  border-color: #14A2E4;
+  grid-template-areas: 'info image image';
+
+  .card-info{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    grid-area: info;
+    .title{
+      font-size: 25px;
+    }
+    .date{
+      font-size: 18px;
+
+    }
+    .place{
+      font-size: 25px;
+    }
+
+  }
+  .card-img{
+    grid-area: image;
+  }
+}
