@@ -1,77 +1,4 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	background-color: #fff;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-body {
-	display: flex;
-	flex-direction: column;
-}
-
-h1, h2, h3, h4, h5, h6,p {
-	padding: 0;
-	margin: 0;
-}
-
-.Header {
-	display: flex;
-	flex-direction: column;
-	background-color: #fff;
-	align-items: center;
-	justify-content: center;
-}
-
-.Th-logo {
-	display: block;
-	height: 50px;
-	margin: 62px 0;
-}
-
-.Navigation {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
-	flex: 1;
-}
-
-.Nav-bar {
-	margin: 0 0 50px 0;
-}
-
-.Nav-element:not(:last-child) {
-	margin-right: 50px;
-}
-
-.Nav-element {
-	font-size: 24px;
-	cursor: pointer;
-	user-select: none;
-	text-decoration: none;
-	color: #222;
-}
-
-.Nav-element:hover {
-	color: #14A2E4;
-}
-
-.Nav-element[selected] {
-	color: #14A2E4;
-	font-weight: 600;
-}
-
-.Nav-element::after {
-	display: block;
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid #f00;
-}
+@import "components/common";
 
 .Upcoming-events {
 	background-color: #27408B;
@@ -331,5 +258,3 @@ false {
 		margin: 0;
 	}
 }
-
-;
