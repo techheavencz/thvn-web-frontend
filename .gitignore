@@ -4,3 +4,4 @@ node_modules
 .firebase
 firebase-debug.log
 .DS_Store
+public/script/events

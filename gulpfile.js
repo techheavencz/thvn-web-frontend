@@ -2,27 +2,68 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const browserify = require("browserify");
+const source = require("vinyl-source-stream")
+const babelify = require("babelify")
+const tsify = require("tsify")
 
 const paths = {
-    style: {
-        src: 'src/style/*.scss',
-        dest: 'public/style',
-    },
+	style: {
+		src: 'src/style/*.scss',
+		dest: 'public/style',
+	},
+	react: {
+		src: 'src/events/index.tsx',
+		moduleSrc: 'src/events/EventsDisplay.tsx',
+		dest: 'public/script/events'
+	}
 };
 
 function style() {
-    return gulp
-        .src(paths.style.src)
-        .pipe(sass())
-        .pipe(autoprefixer())
-        .pipe(cleanCSS())
-        .pipe(gulp.dest(paths.style.dest));
+	return gulp
+		.src(paths.style.src)
+		.pipe(sass())
+		.pipe(autoprefixer())
+		.pipe(cleanCSS())
+		.pipe(gulp.dest(paths.style.dest));
 }
 
 function watch() {
-    return gulp.watch(paths.style.src, style);
+	return gulp.watch(paths.style.src, style);
 }
 
-exports.default = gulp.series(style, watch);
+function react() {
+	return browserify([paths.react.src], {
+		debug: true,
+
+	})
+		.plugin(tsify)
+		.transform(babelify, {
+		presets: [
+			["@babel/preset-env", {
+				corejs: {
+					version: "3.18.3",
+					proposals: true,
+					shippedProposals: true
+				},
+				targets: {
+					esmodules: true
+				},
+				useBuiltIns: "usage"
+			}],
+			"@babel/preset-typescript",
+			"@babel/preset-react"
+		],
+		extensions: [".ts", ".tsx", ".js", ".jsx"],
+		only: ["src/events/**/*"],
+		global: true
+	}).bundle()
+		.pipe(source("app.js"))
+		.pipe(gulp.dest(paths.react.dest))
+}
+
+
+exports.default = gulp.series(style, react, watch);
 exports.build = style;
+exports.react = react;
 exports.watch = watch;

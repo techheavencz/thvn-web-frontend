@@ -1,9 +1,9 @@
 import React from "react";
 import {useEvents} from "../hooks/useEvents";
-import Event from "./Event";
+import EventCard from "./EventCard";
 import EventSection from "./EventSection";
 
-export default function Events() {
+export default function EventsDisplay() {
 	const events = useEvents();
 
 	if (!events.loaded) {
@@ -13,13 +13,21 @@ export default function Events() {
 			</div>
 		)
 	} else {
+		if(events.failed){
+			return(
+				<div>
+					Při načítání se něco pokazilo :(
+				</div>
+			)
+		}
+
 		let ActiveElem = <div></div>
 		let FuturesElem = <div></div>
 		let PrevElem = <div></div>
 		if (events.current !== undefined) {
 			ActiveElem =
-				<Event id={events.current.id} title={events.current.title} description={events.current.description}
-					   cover_url={events.current.cover_url} date={events.current.date} place={events.current.place}/>
+				<EventCard id={events.current.id} title={events.current.title} description={events.current.description}
+						   cover_url={events.current.cover_url} date={events.current.date} place={events.current.place}/>
 		}
 		if(events.future !== undefined && events.future.length > 0){
 			FuturesElem = <EventSection title={"Další Akce"} events={events.future} />
@@ -37,6 +45,5 @@ export default function Events() {
 				{PrevElem}
 			</div>
 		)
-
 	}
 }

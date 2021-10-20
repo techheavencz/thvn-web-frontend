@@ -1,7 +1,7 @@
 import React from "react"
 import {IEvent} from "../interfaces/event";
 
-export default function Event(event: IEvent){
+export default function EventCard(event: IEvent){
 	return(
 		<div>
 			<span>{event.title}</span>
