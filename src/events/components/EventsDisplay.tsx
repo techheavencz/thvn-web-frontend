@@ -27,7 +27,8 @@ export default function EventsDisplay() {
 		if (events.current !== undefined) {
 			ActiveElem =
 				<EventCard id={events.current.id} title={events.current.title} description={events.current.description}
-						   cover_url={events.current.cover_url} date={events.current.date} place={events.current.place}/>
+						   cover_url={events.current.cover_url} date={events.current.date} place={events.current.place}
+						   event_url={events.current.event_url}/>
 		}
 		if(events.future !== undefined && events.future.length > 0){
 			FuturesElem = <EventSection title={"Další Akce"} events={events.future} />

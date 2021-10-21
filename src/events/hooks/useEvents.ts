@@ -11,21 +11,23 @@ interface IUseEventsReturn {
 	failed?: boolean
 }
 
-export function useEvents(Url = "https://events.thvn-dev.cz/events/TechHeavenCZ"): IUseEventsReturn {
+export function useEvents(Url = "http://localhost:8080/events/dummy"): IUseEventsReturn {
 	const [events, setEvents] = useState<IUseEventsReturn>({loaded: false})
 
 	useEffect(() => {
 		if (!events.loaded) {
 			fetch(Url)
 				.then(e => {
-					if(!e.ok){
+					if (!e.ok) {
 						setEvents({loaded: true, failed: true})
 						return
 					}
-					e.json().then(eventy => {
+					e.json().then(eventi => {
+						const eventy = eventi.data
 						const eventsObj: IUseEventsReturn = {future: [], prev: [], loaded: true}
 						for (const eventDate of eventy) {
-							if (eventDate.date >= new Date()) {
+							if (new Date(eventDate.date) >= new Date()) {
+								console.log(eventDate.id)
 								eventsObj.future?.push(eventDate)
 							} else {
 								eventsObj.prev?.push(eventDate)

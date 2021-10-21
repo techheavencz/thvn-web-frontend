@@ -13,6 +13,8 @@ export default function EventList(props: EventListProps) {
 											description={e.description}
 											cover_url={e.cover_url}
 											date={e.date}
-											place={e.place}/>
+											place={e.place}
+											event_url={e.event_url}
+											small/>
 	)
 }
