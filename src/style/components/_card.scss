@@ -11,23 +11,25 @@
 	.card-info {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		justify-content: right;
+		align-items: end;
+		justify-content: center;
 		font-family: 'Source Sans Pro', sans-serif;
 		grid-area: info;
 		font-weight: bold;
+		text-align: right;
+		height: 100%;
 
 		.title {
-			font-size: 25px;
+			font-size: 2rem;
 		}
 
 		.date {
-			font-size: 18px;
+			font-size: 1.75rem;
 
 		}
 
 		.place {
-			font-size: 25px;
+			font-size: 2rem;
 		}
 
 	}

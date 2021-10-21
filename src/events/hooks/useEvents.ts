@@ -1,7 +1,6 @@
 import {useState, useEffect} from "react";
 import {IEvent} from "../interfaces/event";
-import {Simulate} from "react-dom/test-utils";
-import timeUpdate = Simulate.timeUpdate;
+
 
 interface IUseEventsReturn {
 	current?: IEvent,
@@ -42,11 +41,11 @@ export function useEvents(Url = "http://localhost:8080/events/dummy"): IUseEvent
 						}
 
 						setEvents(eventsObj);
-					}).catch(e=>{
+					}).catch(_e=>{
 						setEvents({loaded: true, failed: true})
 					})
 				})
-				.catch(e => {
+				.catch(_e => {
 					setEvents({loaded: true, failed: true})
 				})
 		}

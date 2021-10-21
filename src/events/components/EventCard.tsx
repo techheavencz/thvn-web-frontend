@@ -6,12 +6,14 @@ interface IEventProps extends IEvent {
 }
 
 export default function EventCard(event: IEventProps) {
+	const eventDate = new Date(event.date)
+
 	return (
 		<div className={"card"}>
 			<div className={"card-info"}>
-				<span>{event.title}</span>
-				<span>{event.date}</span>
-				<span>{event.place}</span>
+				<span className={"title"}>{event.title}</span>
+				<span className={"date"}>{eventDate.getDay()}.{eventDate.getMonth()}.{eventDate.getFullYear()} {eventDate.getHours()}:{eventDate.getMinutes()}</span>
+				<span className={"place"}>{event.place}</span>
 			</div>
 			<img src={event.cover_url} alt={"cover image"} className={"card-img"}
 				 width={event.small ? "225px" : "450px"}/>
