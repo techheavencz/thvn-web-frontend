@@ -9,12 +9,12 @@ interface EventSectionProps{
 
 export default function EventSection(props: EventSectionProps){
 	return(
-		<div>
-			<h3>{props.title}</h3>
-			<div>
+		<section className={"event-card-box"}>
+			<h3 className={"box-title"}>{props.title}</h3>
+			<div className={"box-content"}>
 				{/*@ts-ignore*/}
 				<EventList events={props.events}/>
 			</div>
-		</div>
+		</section>
 	)
 }

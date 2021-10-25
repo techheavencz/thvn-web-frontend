@@ -1,10 +1,12 @@
-.card {
+$textsizeBase: 1.75rem;
+$textsizeBig: 2rem;
+
+@mixin ICard($baseTextSize, $biggerTextSize, $small: false) {
 	display: grid;
 	border-width: 2px;
 	border-radius: 25px;
 	border-color: #14A2E4;
 	border-style: solid;
-	width: 100%;
 	grid-template-areas: 'info image';
 	grid-template-columns: 1fr 2fr;
 
@@ -18,18 +20,18 @@
 		font-weight: bold;
 		text-align: right;
 		height: 100%;
+		padding-left: 1ch;
 
 		.title {
-			font-size: 2rem;
+			font-size: $biggerTextSize;
 		}
 
 		.date {
-			font-size: 1.75rem;
-
+			font-size: $baseTextSize;
 		}
 
 		.place {
-			font-size: 2rem;
+			font-size: $biggerTextSize;
 		}
 
 	}
@@ -39,4 +41,12 @@
 		grid-area: image;
 		border-radius: 25px
 	}
+}
+
+.card {
+	@include ICard($textsizeBase, $textsizeBig);
+}
+
+.card-small {
+	@include ICard(calc(#{$textsizeBase} / 1.75), calc(#{$textsizeBig} / 1.75));
 }

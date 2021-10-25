@@ -3,9 +3,10 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const browserify = require("browserify");
-const source = require("vinyl-source-stream")
-const babelify = require("babelify")
-const tsify = require("tsify")
+const source = require("vinyl-source-stream");
+const babelify = require("babelify");
+const tsify = require("tsify");
+const envify = require("envify");
 
 const paths = {
 	style: {
@@ -14,7 +15,6 @@ const paths = {
 	},
 	react: {
 		src: 'src/events/index.tsx',
-		moduleSrc: 'src/events/EventsDisplay.tsx',
 		dest: 'public/script/events'
 	}
 };
@@ -38,26 +38,27 @@ function react() {
 
 	})
 		.plugin(tsify)
+		.transform(envify)
 		.transform(babelify, {
-		presets: [
-			["@babel/preset-env", {
-				corejs: {
-					version: "3.18.3",
-					proposals: true,
-					shippedProposals: true
-				},
-				targets: {
-					esmodules: true
-				},
-				useBuiltIns: "usage"
-			}],
-			"@babel/preset-typescript",
-			"@babel/preset-react"
-		],
-		extensions: [".ts", ".tsx", ".js", ".jsx"],
-		only: ["src/events/**/*"],
-		global: true
-	}).bundle()
+			presets: [
+				["@babel/preset-env", {
+					corejs: {
+						version: "3.18.3",
+						proposals: true,
+						shippedProposals: true
+					},
+					targets: {
+						esmodules: true
+					},
+					useBuiltIns: "usage"
+				}],
+				"@babel/preset-typescript",
+				"@babel/preset-react"
+			],
+			extensions: [".ts", ".tsx", ".js", ".jsx"],
+			only: ["src/events/**/*"],
+			global: true
+		}).bundle()
 		.pipe(source("app.js"))
 		.pipe(gulp.dest(paths.react.dest))
 }

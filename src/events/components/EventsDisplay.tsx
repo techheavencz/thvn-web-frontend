@@ -21,9 +21,9 @@ export default function EventsDisplay() {
 			)
 		}
 
-		let ActiveElem = <div></div>
-		let FuturesElem = <div></div>
-		let PrevElem = <div></div>
+		let ActiveElem = <></>
+		let FuturesElem = <></>
+		let PrevElem = <></>
 		if (events.current !== undefined) {
 			ActiveElem =
 				<EventCard id={events.current.id} title={events.current.title} description={events.current.description}
@@ -38,13 +38,13 @@ export default function EventsDisplay() {
 		}
 
 		return(
-			<div>
+			<>
 				<div>
 					{ActiveElem}
 				</div>
 				{FuturesElem}
 				{PrevElem}
-			</div>
+			</>
 		)
 	}
 }

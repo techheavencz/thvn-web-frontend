@@ -40,8 +40,11 @@ export function useEvents(Url = "http://localhost:8080/events/dummy"): IUseEvent
 							eventsAct?.splice(0, 1);
 						}
 
+						//sort past events to the closest
+						eventsObj.future = eventsObj.future?.reverse();
+
 						setEvents(eventsObj);
-					}).catch(_e=>{
+					}).catch(_e => {
 						setEvents({loaded: true, failed: true})
 					})
 				})
