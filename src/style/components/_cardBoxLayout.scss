@@ -1,0 +1,29 @@
+.event-card-box {
+	padding: 2rem 0;
+
+	.box-title {
+		font-size: 2rem;
+		font-weight: bold;
+		color: black;
+		text-align: center;
+	}
+
+	.box-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		row-gap: .5em;
+		column-gap: 1em;
+		column-count: 2;
+
+		> * {
+			flex: 1 0 45%;
+
+			&:last-child:is(:nth-child(odd)) {
+				flex-shrink: 1;
+				flex-grow: 0;
+			}
+		}
+	}
+}

@@ -46,27 +46,30 @@
     </nav>
   </div>
 </header>
-<section class="Page Page-Events">
-  <div class="Upcoming-events">
-    <div class="About-next-event">
-      <div class="Next-event-container" id="Next-event"></div>
-    </div>
-  </div>
-</section>
+<noscript>K načtení událostí je potřeba javascript!</noscript>
+<section class="Page Page-Events" id="eventListElem"></section>
+<script src="script/events/app.js"></script>
+<!--<section class="Page Page-EventsDisplay">-->
+<!--  <div class="Upcoming-events">-->
+<!--    <div class="About-next-event">-->
+<!--      <div class="Next-event-container" id="Next-event"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 
-<section class="Previous-events-section">
-  <div class="Prev-events-title">Další akce</div>
-  <section class="Prev-events-container" id="eventsNext"></section>
+<!--<section class="Previous-events-section">-->
+<!--  <div class="Prev-events-title">Další akce</div>-->
+<!--  <section class="Prev-events-container" id="eventsNext"></section>-->
 
-  <div class="Prev-events-title">Minulé akce</div>
-  <section class="Prev-events-container" id="eventsPast"></section>
-</section>
+<!--  <div class="Prev-events-title">Minulé akce</div>-->
+<!--  <section class="Prev-events-container" id="eventsPast"></section>-->
+<!--</section>-->
 
-<script type="module">
-    import {redirectOldUrls, main} from './script/index.js';
+<!--<script type="module">-->
+<!--    import {redirectOldUrls, main} from './script/index.js';-->
 
-    // On HP check old URLs first, than run app `main()`;
-    redirectOldUrls().then(isRedirecting => isRedirecting ? null : main());
-</script>
+<!--    // On HP check old URLs first, than run app `main()`;-->
+<!--    redirectOldUrls().then(isRedirecting => isRedirecting ? null : main());-->
+<!--</script>-->
 </body>
 </html>
