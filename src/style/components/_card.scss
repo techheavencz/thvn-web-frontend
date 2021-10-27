@@ -1,6 +1,7 @@
 $textsizeBase: 1.75rem;
 $textsizeBig: 2rem;
 
+
 @mixin ICard($baseTextSize, $biggerTextSize, $small: false) {
 	display: grid;
 	border-width: 2px;
@@ -9,6 +10,15 @@ $textsizeBig: 2rem;
 	border-style: solid;
 	grid-template-areas: 'info image';
 	grid-template-columns: 1fr 2fr;
+
+	a{
+		color: black;
+		text-decoration: none;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 
 	.card-info {
 		display: flex;
@@ -20,10 +30,12 @@ $textsizeBig: 2rem;
 		font-weight: bold;
 		text-align: right;
 		height: 100%;
-		padding-left: 1ch;
+		padding-left: 2ch;
 
 		.title {
 			font-size: $biggerTextSize;
+			text-decoration: underline;
+			color: #14A2E4;
 		}
 
 		.date {

@@ -10,7 +10,7 @@ interface IUseEventsReturn {
 	failed?: boolean
 }
 
-export function useEvents(Url = "http://localhost:8080/events/dummy"): IUseEventsReturn {
+export function useEvents(Url = "https://events.thvn-dev.cz/events/TechHeavenCZ"): IUseEventsReturn {
 	const [events, setEvents] = useState<IUseEventsReturn>({loaded: false})
 
 	useEffect(() => {
@@ -41,7 +41,7 @@ export function useEvents(Url = "http://localhost:8080/events/dummy"): IUseEvent
 						}
 
 						//sort past events to the closest
-						eventsObj.future = eventsObj.future?.reverse();
+						eventsObj.prev = eventsObj.prev?.reverse();
 
 						setEvents(eventsObj);
 					}).catch(_e => {

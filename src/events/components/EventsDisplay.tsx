@@ -21,7 +21,7 @@ export default function EventsDisplay() {
 			)
 		}
 
-		let ActiveElem = <></>
+		let ActiveElem = <div>Aktuálně se nic neplánuje</div>
 		let FuturesElem = <></>
 		let PrevElem = <></>
 		if (events.current !== undefined) {
