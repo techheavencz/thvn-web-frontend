@@ -7,6 +7,7 @@ const source = require("vinyl-source-stream");
 const babelify = require("babelify");
 const tsify = require("tsify");
 const envify = require("envify");
+const uglifyify = require("uglifyify")
 
 const paths = {
 	style: {
@@ -34,8 +35,7 @@ function watch() {
 
 function react() {
 	return browserify([paths.react.src], {
-		debug: true,
-
+		debug: process.env.NODE_ENV==="production",
 	})
 		.plugin(tsify)
 		.transform(envify)
@@ -58,6 +58,9 @@ function react() {
 			extensions: [".ts", ".tsx", ".js", ".jsx"],
 			only: ["src/events/**/*"],
 			global: true
+		})
+		.transform(uglifyify, {
+			global: true,
 		}).bundle()
 		.pipe(source("app.js"))
 		.pipe(gulp.dest(paths.react.dest))
