@@ -1,0 +1,26 @@
+@import "components/_common";
+
+.Organization-Cover {
+	max-width: 1000px;
+	height: 250px;
+	border-radius: 4px;
+	width: 100%;
+	background: url("../img/org_cover.svg") no-repeat center;
+	background-size: contain;
+}
+.Organization-Info {
+	max-width: 600px;
+	margin: 42px 42px;
+	text-align: center;
+
+	> p:not(:first-child) {
+		margin: 4px 0 0 0;
+		font-size: 24px;
+	}
+	> p:first-child {
+		font-size: 36px;
+	}
+	a {
+		color: #14A2E4;
+	}
+}
