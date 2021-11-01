@@ -7,9 +7,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Events | TechHeaven</title>
+  <title>HUB 2.0 | TechHeaven</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="style/styles_events.css">
+  <link rel="stylesheet" href="style/styles_hub.css?v=2">
 
   <link rel="icon" href="img/favicon.png">
   <script>
@@ -40,14 +40,92 @@
   </figure>
   <div class="Nav-bar">
     <nav class="Navigation">
-      <a class="Nav-element" href="/" data-route="events" selected>akce</a>
-      <a class="Nav-element" href="/hub" data-route="hub">hub</a>
+      <a class="Nav-element" href="/events" data-route="events">akce</a>
+      <a class="Nav-element" href="/" data-route="hub" selected>hub</a>
       <a class="Nav-element" href="/org" data-route="organizace">organizace</a>
     </nav>
   </div>
 </header>
-<noscript>K načtení událostí je potřeba javascript!</noscript>
-<section class="Page Page-Events" id="eventListElem"></section>
-<script src="script/events/app.js"></script>
+<main class="Page Page-Hub" id="Page-Hub">
+  <div class="Section-hub">
+    <div class="Cover-hub"></div>
+    <article class="Section-text">
+      <div class="Textbox">
+        <p>
+          Provozujeme vývojářské coworkingové centrum, které nabízí jedinečný
+          prostor pro vaši práci. K dispozici jsou dvě velké kanceláře
+          včetně jedné zasedací místností s projektorem. Jsme místo pro
+          vytváření nových nápadů.
+          <br><br>
+          Jsme HUB 2.0.
+        </p>
+      </div>
+    </article>
+    <section class="Advantages">
+      <div class="Advantages-container">
+        <section class="Advantages-element">
+          <div class="Advantage-img">
+            <img
+                    class="adv-cup-img"
+                    src="img/ic_coffee_cup.svg"
+                    alt="cup"
+            >
+          </div>
+          <div class="Advantage-text">Výborná káva</div>
+        </section>
+        <section class="Advantages-element">
+          <div class="Advantage-img">
+            <img class="adv-apple-img" src="img/ic_apple.svg" alt="apple">
+          </div>
+          <div class="Advantage-text">Ovoce a další dobroty</div>
+        </section>
+        <section class="Advantages-element">
+          <div class="Advantage-img">
+            <img
+                    class="adv-location-img"
+                    src="img/ic_location_pointer.svg"
+                    alt="location"
+            >
+          </div>
+          <div class="Advantage-text">Blízko do centra</div>
+        </section>
+      </div>
+    </section>
+
+    <section class="Section-Map">
+      <div id="Section-Map-Frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13010.422480131327!2d13.383857755976539!3d49.736886576060755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e5f9aaedb106754!2sHUB+2.0!5e0!3m2!1scs!2scz!4v1562056771573!5m2!1scs!2scz"
+                style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="Section-Tarifs">
+      <div class="Tarifs">
+        <div class="Tarifs-element">
+          <div class="Tarifs-image">
+            <img
+                    class="Tarifs-img"
+                    src="img/ic_eternity.svg"
+                    alt="eternity"
+            >
+          </div>
+          <div class="Tarifs-title">1 měsíc</div>
+          <ul class="Tarifs-Benefits-list">
+            <li>přístup 24/7</li>
+            <li>fixní stůl</li>
+            <li>kafe a další dobroty</li>
+            <li>vstup na akce v HUBu zdarma</li>
+          </ul>
+          <div class="Tarifs-price">
+            2500 Kč
+          </div>
+        </div>
+      </div>
+    </section>
+    <a class="Action-button Tarifs-button" href="mailto:hub@techheaven.org">
+      Nezávazně vyzkoušet
+    </a>
+  </div>
+</main>
 </body>
 </html>
