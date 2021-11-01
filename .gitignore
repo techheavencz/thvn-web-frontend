@@ -4,3 +4,7 @@ node_modules
 .firebase
 firebase-debug.log
 .DS_Store
+
+
+public/style/styles_*.css
+public/script/events
